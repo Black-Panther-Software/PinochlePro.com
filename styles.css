@@ -64,6 +64,8 @@ video {
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #eee;
+    display: inline-block; /* Make links display as block elements */
+    margin: 5px; /* Add some margin between links */
 }
 
 .nav a:hover {
