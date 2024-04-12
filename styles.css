@@ -89,8 +89,7 @@ video {
     margin-top: 20px;
 }
 
-.tribute-section,
-.gameplay-section {
+.section {
     margin-top: 40px;
     padding: 20px;
     background-color: #f9f9f9;
@@ -98,24 +97,21 @@ video {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.tribute-section .photo,
-.gameplay-section .photo {
+.section .photo {
     display: block;
     margin: 20px auto;
     max-width: 100%;
     height: auto;
 }
 
-.tribute-section .caption,
-.gameplay-section .caption {
+.section .caption {
     text-align: right;
     font-style: italic;
     color: #888;
     margin-top: -16px;
 }
 
-.tribute-section p,
-.gameplay-section p {
+.section p {
     text-align: justify;
     margin-bottom: 20px;
 }
