@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinochle Pro - FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS styles */
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        .faq-question {
+            font-size: 16px; /* Reduced font size */
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .faq-question a {
+            text-decoration: none;
+            color:black;
+        }
+
+        .faq-answer {
+            display: none;
+        }
+
+        .faq-answer-show {
+            display: block;
+        }
+
+        .faq-expand-icon {
+            margin-left: auto; /* Pushes it to the right */
+            transition: transform 0.3s; /* Smooth animation */
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 8px solid #333;
+            transform: rotate(90deg); /* Initially rotated */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="support.html">Support</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <h1 class="title">Frequently Asked Questions</h1>
+        <div class="faq-item" id="question1">
+            <h3 class="faq-question">
+                <a href="#question1">Where did these characters come from?</a>
+            </h3>
+            <div class="faq-answer faq-answer-show" id="answer1">
+                They <a href="history.html">were inspired by</a> playing with my wife's grandparents Bob and Shirley. They were so fun, witty, and sarcastic that I decided to memorialize them in this game.
+            </div>
+        </div>
+        <div class="faq-item" id="question2">
+            <h3 class="faq-question">
+                <a href="#question2">Why don't you support _______ feature?</a>
+            </h3>
+            <div class="faq-answer faq-answer-show" id="answer2">
+                I may not know about it. If you ask nicely, I may just add it! Please submit your idea through the <a href="https://pinochle-pro.canny.io/" target="_blank">feedback site</a>.
+            </div>
+        </div>
+        <div class="faq-item" id="question3">
+            <h3 class="faq-question">
+                <a href="#question3">Is there anything I can do to say thanks for the game?</a>
+            </h3>
+            <div class="faq-answer faq-answer-show" id="answer3">
+                <a href="https://apps.apple.com/us/app/pinochle-pro/id567644839?action=write-review" target="_blank">Leaving a 5-star review</a> on the App Store not only shows your appreciation but also helps us reach more players! Higher reviews lead allows me to focus on adding new features and improvements to the game.
+            </div>
+        </div>
+        <div class="faq-item" id="question4">
+            <h3 class="faq-question">
+                <a href="#question4">Why do I keep getting similar hands? Why is it not more random?</a>
+            </h3>
+            <div class="faq-answer faq-answer-show" id="answer4">
+                Pinochle Pro models a robust shuffling algorithm designed to mimic real-life card shuffling, ensuring fairness and unpredictability. While streaks of similar hands may occur occasionally, it's essential to recognize the extremely low probability of any two hands being exactly alike due to the vast number of possible combinations inherent in a shuffled deck of cards. With 48 cards in a Pinochle deck and over 3 x 10<sup>66</sup> possible permutations (that's 48 multiplied by 47, then by 46, and so on down to 1, known as 48 factorial), the chances of repeating a hand are infinitesimally small. For a deeper understanding of the mathematics behind card shuffling, you can explore <a href="https://www.matthewweathers.com/year2006/shuffling_cards.htm" target="_blank">this article</a>.
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript code
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('faq-answer-show');
+            });
+        });
+        
+    </script>
+</body>
+</html>
