@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pinochle Pro - Home</title>
 <link rel="stylesheet" href="styles.css">
+<style>
+    /* CSS for placeholder image */
+    .video-placeholder {
+        width: 100%;
+        height: auto;
+    }
+</style>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ813JV3VH"></script>
@@ -25,7 +32,10 @@
         <a href="contact.html">Contact</a>
     </div>
     <h1 class="title">Welcome to Pinochle Pro</h1>
-    <video autoplay loop muted>
+    <!-- Placeholder Image -->
+    <img class="video-placeholder" src="placeholder.jpg" alt="Video Placeholder">
+    <!-- Actual Video with Lazy Loading -->
+    <video autoplay loop muted preload="none">
         <source src="gameplay-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
