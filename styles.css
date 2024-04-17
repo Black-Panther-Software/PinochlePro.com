@@ -120,6 +120,5 @@ video {
 
 .profile-photo {
     display: block;
-    margin: 20px auto;
-    max-height: 400px;
+    max-height: 160px;
 }
