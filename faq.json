@@ -1,0 +1,22 @@
+[
+    {
+        "question": "Where did these characters come from?",
+        "answer": "They <a href='history.html'>were inspired by</a> playing with my wife's grandparents Bob and Shirley. They were so fun, witty, and sarcastic that I decided to memorialize them in this game."
+    },
+    {
+        "question": "Why are you changing the game? I like how it was before.",
+        "answer": "Change can be challenging. Many of you have logged thousands of hours into the game and I understand the attachment to Pinochle Pro. We're updating the game to address long-standing issues and prepare for exciting new features, such as additional animated characters, smarter opponents, and improved graphics. These changes are driven by a desire for meaningful improvement, not change for the sake of change. Your feedback is crucial in shaping these changes. Visit our <a href='https://pinochle-pro.canny.io/' target='_blank'>feedback site</a> to suggest and vote on features you'd like to see. Thank you for your understanding and support. 🙏"
+    },
+    {
+        "question": "Why do I keep getting similar hands? Why is it not more random?",
+        "answer": "Pinochle Pro models its shuffling algorithm designed to mimic real-life card shuffling, ensuring fairness and unpredictability. While streaks of similar hands may occur occasionally, it's essential to recognize the extremely low probability of any two hands being exactly alike due to the vast number of possible combinations inherent in a shuffled deck of cards. With 48 cards in a Pinochle deck and over 3 x 10<sup>66</sup> possible permutations (that's 48 multiplied by 47, then by 46, and so on down to 1, known as 48 factorial), the chances of repeating a hand are infinitesimally small. For a deeper understanding of the mathematics behind card shuffling, you can explore <a href='https://www.matthewweathers.com/year2006/shuffling_cards.htm' target='_blank'>this article</a>."
+    },
+    {
+        "question": "Why don't you support _______ feature?",
+        "answer": "I may not know about it. If you ask nicely, I may just add it! Please submit your idea through the <a href='https://pinochle-pro.canny.io/' target='_blank'>feedback site</a>."
+    },
+    {
+        "question": "Is there anything I can do to say thanks for the game?",
+        "answer": "<a href='https://apps.apple.com/us/app/pinochle-pro/id567644839?action=write-review' target='_blank'>Leaving a 5-star review</a> on the App Store not only shows your appreciation but also helps us reach more players! Higher reviews lead allows me to focus on adding new features and improvements to the game."
+    }
+]

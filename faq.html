@@ -64,6 +64,32 @@
 
   gtag('config', 'G-NQ813JV3VH');
 </script>
+<script>
+    fetch('./faq.json')
+    .then(response => response.json())
+    .then(data => {
+        const container = document.querySelector('.container');
+
+        data.forEach(item => {
+            const faqItem = document.createElement('div');
+            faqItem.classList.add('faq-item');
+
+            const question = document.createElement('h3');
+            question.classList.add('faq-question');
+            question.innerHTML = `<a href="#${item.question}">${item.question}</a>`;
+
+            const answer = document.createElement('div');
+            answer.classList.add('faq-answer', 'faq-answer-hide');
+            answer.innerHTML = item.answer;
+
+            faqItem.appendChild(question);
+            faqItem.appendChild(answer);
+
+            container.appendChild(faqItem);
+        });
+    })
+    .catch(error => console.error('Error fetching FAQ data:', error));
+</script>
 <body>
     <div class="container">
         <div class="nav">
@@ -74,52 +100,6 @@
             <a href="./contact">Contact</a>
         </div>
         <h1 class="title">Frequently Asked Questions</h1>
-        <div class="faq-item" id="history">
-            <h3 class="faq-question">
-                <a href="#history">Where did these characters come from?</a>
-            </h3>
-            <div class="faq-answer faq-answer-hide">
-                They <a href="history.html">were inspired by</a> playing with my wife's grandparents Bob and Shirley. They were so fun, witty, and sarcastic that I decided to memorialize them in this game.
-            </div>
-        </div>
-        <div class="faq-item" id="why_change_pinochlepro">
-            <h3 class="faq-question">
-                <a href="#why_change_pinochlepro">Why are you changing the game? I like how it was before.</a>
-            </h3>
-            <div class="faq-answer faq-answer-hide">
-            <p>Change can be challenging. Many of you have logged thousands of hours into the game and I understand the attachment to Pinochle Pro.</p>
-
-                <p>We're updating the game to address long-standing issues and prepare for exciting new features, such as additional animated characters, smarter opponents, and improved graphics. These changes are driven by a desire for meaningful improvement, not change for the sake of change.</p>
-
-                <p>Your feedback is crucial in shaping these changes. Visit our <a href="https://pinochle-pro.canny.io/" target="_blank">feedback site</a> to suggest and vote on features you'd like to see.</p>
-
-                <p>Thank you for your understanding and support. 🙏</p>
-            </div>
-        </div>
-        <div class="faq-item" id="same_hand">
-            <h3 class="faq-question">
-                <a href="#same_hand">Why do I keep getting similar hands? Why is it not more random?</a>
-            </h3>
-            <div class="faq-answer faq-answer-hide">
-                Pinochle Pro models its shuffling algorithm designed to mimic real-life card shuffling, ensuring fairness and unpredictability. While streaks of similar hands may occur occasionally, it's essential to recognize the extremely low probability of any two hands being exactly alike due to the vast number of possible combinations inherent in a shuffled deck of cards. With 48 cards in a Pinochle deck and over 3 x 10<sup>66</sup> possible permutations (that's 48 multiplied by 47, then by 46, and so on down to 1, known as 48 factorial), the chances of repeating a hand are infinitesimally small. For a deeper understanding of the mathematics behind card shuffling, you can explore <a href="https://www.matthewweathers.com/year2006/shuffling_cards.htm" target="_blank">this article</a>.
-            </div>
-        </div>
-        <div class="faq-item" id="feature_request">
-            <h3 class="faq-question">
-                <a href="#feature_request">Why don't you support _______ feature?</a>
-            </h3>
-            <div class="faq-answer faq-answer-hide">
-                I may not know about it. If you ask nicely, I may just add it! Please submit your idea through the <a href="https://pinochle-pro.canny.io/" target="_blank">feedback site</a>.
-            </div>
-        </div>
-        <div class="faq-item" id="thanks">
-            <h3 class="faq-question">
-                <a href="#thanks">Is there anything I can do to say thanks for the game?</a>
-            </h3>
-            <div class="faq-answer faq-answer-hide">
-                <a href="https://apps.apple.com/us/app/pinochle-pro/id567644839?action=write-review" target="_blank">Leaving a 5-star review</a> on the App Store not only shows your appreciation but also helps us reach more players! Higher reviews lead allows me to focus on adding new features and improvements to the game.
-            </div>
-        </div>
     </div>
     <script>
         // JavaScript code
