@@ -23,5 +23,10 @@
         "id": "thanks",
         "question": "Is there anything I can do to say thanks for the game?",
         "answer": "<a href='https://apps.apple.com/us/app/pinochle-pro/id567644839?action=write-review' target='_blank'>Leaving a 5-star review</a> on the App Store not only shows your appreciation but also helps us reach more players! Higher reviews lead allows me to focus on adding new features and improvements to the game."
+    },
+    {
+        "id": "bidding_strategy",
+        "question": "Is there a way to make by partner and opponents bid less aggressively?",
+        "answer": "Pinochle Pro's bidding logic is modeled after how humans bid. Not knowing what it's partner will pass, players assesses how strong the hand is and considers the possibility that its partner may or may not pass the card(s) needed. Because Pinochle Pro players never cheat (by looking at other player’s hands) and the randomness of shuffled cards, players will bid too high and will go set!<br/>If you are finding your partner or opponents bidding too high or low, you can influence your partner and opponent's bidding styles in the game options<br/><ul><li><b>Conservative:<b/> The AI bids with approximately 85% accuracy, assuming receiving a single-card hit from their partner</li><li><b>Aggressive:<b/> The AI bids higher, maintaining approximately 70% accuracy, assuming receiving a single-card hit from their partner</li></ul>"
     }
 ]
